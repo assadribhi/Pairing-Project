@@ -1,25 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Data
+import movies from "./movies";
+
+// React
+import React, { useState } from "react";
+import { Route, Switch } from "react-router";
+import { Link } from "react-router-dom";
+
+// Styles
+import { ThemeSwitcher, GlobalStyle } from "./styles";
+
+// Theme
+import { ThemeProvider } from "styled-components";
+
+// Components
+import MoviesList from "./components/MoviesList";
+import MovieDetail from "./components/MovieDetail";
+import Home from "./components/Home";
+
+const theme = {
+  lightTheme: {
+    backgroundColor: "#c0c0c0",
+    fontColor: "#000000",
+    priceFontColor: "#FFD300",
+  },
+  darkTheme: {
+    backgroundColor: "#000000",
+    fontColor: "#c0c0c0",
+    priceFontColor: "#FFD300",
+  },
+};
 
 function App() {
+  const [_movies, setMovies] = useState(movies);
+  const [currentTheme, setCurrentTheme] = useState("lightTheme");
+
+  const toggleTheme = () => {
+    setCurrentTheme(currentTheme === "lightTheme" ? "darkTheme" : "lightTheme");
+    console.log(currentTheme);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme[currentTheme]}>
+      <GlobalStyle />
+      <ThemeSwitcher onClick={toggleTheme}>
+        {currentTheme === "lightTheme" ? "Dark" : "Light"} Mode
+      </ThemeSwitcher>
+      <Link to="/">Home</Link>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/movies/:movieSlug">
+          <MovieDetail movies={_movies} />
+        </Route>
+        <Route path="/movies">
+          <MoviesList movies={_movies} setMovies={setMovies} />
+        </Route>
+      </Switch>
+    </ThemeProvider>
   );
 }
 
