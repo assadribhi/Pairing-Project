@@ -34,6 +34,7 @@ function App() {
   const [_movies, setMovies] = useState(movies);
   const [currentTheme, setCurrentTheme] = useState("lightTheme");
 
+
   const toggleTheme = () => {
     setCurrentTheme(currentTheme === "lightTheme" ? "darkTheme" : "lightTheme");
     console.log(currentTheme);

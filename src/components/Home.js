@@ -11,7 +11,7 @@ const Home = () => {
         <Title>Movies</Title>
       </Link>
       <Descreption>
-        Your Destination for all your Heavy Equipment needs.
+        Home for Movies
       </Descreption>
     </>
   );

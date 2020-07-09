@@ -7,13 +7,14 @@ import React from "react";
 // Styles
 import { DetailWrapper } from "../styles";
 
-const MovieDetail = (props) => {
+const MovieDetail = ({ movies }) => {
   const { movieSlug } = useParams();
 
-  const movie = props.movies.find((movie) => movie.slug === movieSlug);
+  const movie = movies.find((movie) => movie.slug === movieSlug);
   if (!movie) return <Redirect to="/movies" />;
   return (
     <DetailWrapper>
+      <h1>test</h1>
       <img src={movie.poster} alt={movie.name} />
       <h1 className="movieName">Name: {movie.name} </h1>
       <p className="movieGenre">Genre: {movie.genre}</p>
