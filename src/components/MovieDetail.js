@@ -15,7 +15,7 @@ const MovieDetail = ({ movies }) => {
   if (!selected) return <Redirect to="/movies" />;
 
   const filteredMovies = movies.filter((movie) =>
-    movie.genre.includes(selected.genre[0])
+    movie.genre.includes(selected.genre[0]) || movie.genre.includes(selected.genre[1])
   );
   console.log("filtered Movies", filteredMovies);
 
