@@ -15,7 +15,7 @@ const MovieDetail = ({ movies }) => {
   if (!selected) return <Redirect to="/movies" />;
 
   const filteredMovies = movies.filter((movie) =>
-    movie.genre.includes(selected.genre)
+    movie.genre.includes(selected.genre[0])
   );
   console.log("filtered Movies", filteredMovies);
 
@@ -23,7 +23,7 @@ const MovieDetail = ({ movies }) => {
     <MovieItem movie={movie} key={movie.id} />
   ));
   return (
-    <>
+    <div className="row">
       <DetailWrapper>
         <img src={selected.poster} alt={selected.name} />
         <h1 className="movieName">Name: {selected.name} </h1>
@@ -34,7 +34,7 @@ const MovieDetail = ({ movies }) => {
       <ListWrapper>
         {movieRec}
       </ListWrapper>
-    </>
+    </div>
   );
 };
 export default MovieDetail;
