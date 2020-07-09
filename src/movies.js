@@ -5,7 +5,7 @@ const movies = [
     name: "Citizen Kane",
     released: " 5 September 1941",
     runtime: "1h 59min",
-    genre: ["Drama", " Mystery"],
+    genre: " Drama , Mystery",
     plot:
       "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; 'Rosebud'.",
     poster:
@@ -17,7 +17,7 @@ const movies = [
     name: "Full Metal Jacket",
     released: "10 July 1987",
     runtime: "1h 56min",
-    genre: [" Drama", " War"],
+    genre: " Drama , War",
     plot:
       "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
     poster:
@@ -29,7 +29,7 @@ const movies = [
     name: "Taxi Driver",
     released: "9 February 1976",
     runtime: "1h 54min",
-    genre: [" Crime", " Drama"],
+    genre: " Crime , Drama",
     plot:
       "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.",
     poster:
@@ -41,7 +41,7 @@ const movies = [
     name: "Scarface",
     released: "9 December 1983",
     runtime: "2h 50min",
-    genre: [" Crime", " Drama"],
+    genre: " Crime , Drama",
     plot:
       "In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.",
     poster:
@@ -53,7 +53,7 @@ const movies = [
     name: "Lawrence of Arabia",
     released: "11 December 1962",
     runtime: "3h 48min",
-    genre: [" Adventure", " Biography", " Drama"],
+    genre: " Adventure,  Biography,  Drama",
     plot:
       "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.",
     poster:
@@ -65,7 +65,7 @@ const movies = [
     name: "The Sting",
     released: "25 December 1973",
     runtime: "2h 9min",
-    genre: [" Comedy", " Crime", " Drama"],
+    genre: " Comedy, Crime, Drama",
     plot: "Two grifters team up to pull off the ultimate con.",
     poster:
       "https://m.media-amazon.com/images/M/MV5BNGU3NjQ4YTMtZGJjOS00YTQ3LThmNmItMTI5MDE2ODI3NzY3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
@@ -76,7 +76,7 @@ const movies = [
     name: "A Separation",
     released: "28 June 2012",
     runtime: "2h 3min",
-    genre: [" Drama"],
+    genre: " Drama",
     plot:
       "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
     poster:

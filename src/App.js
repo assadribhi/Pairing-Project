@@ -13,7 +13,6 @@ import { ThemeSwitcher, GlobalStyle } from "./styles";
 import { ThemeProvider } from "styled-components";
 
 // Components
-import MovieRec from "./components/MovieRec";
 import MoviesList from "./components/MoviesList";
 import MovieDetail from "./components/MovieDetail";
 import Home from "./components/Home";
@@ -55,7 +54,6 @@ function App() {
         <Route path="/movies/:movieSlug">
           <div className="row">
             <MovieDetail movies={_movies} />
-            <MovieRec movies={_movies} setMovies={setMovies} />
           </div>
         </Route>
         <Route path="/movies">
