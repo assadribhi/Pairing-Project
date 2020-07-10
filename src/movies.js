@@ -1,86 +1,86 @@
 const movies = [
   {
-    id: 1,
-    slug: "citizen-kane",
-    name: "Citizen Kane",
-    released: " 5 September 1941",
-    runtime: "1h 59min",
-    genre: [" Drama", " Mystery"],
+    id: 0,
+    slug: "interstellar",
+    name: "Interstellar",
+    released: " 7 November 2014",
+    runtime: "2h 49min",
+    genre: [" Adventure", " Sci-Fi", " Drama"],
     plot:
-      "Following the death of publishing tycoon Charles Foster Kane, reporters scramble to uncover the meaning of his final utterance; 'Rosebud'.",
+      "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.'.",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX667_CR0,0,667,999_AL_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_SX675_AL_.jpg",
+  },
+  {
+    id: 1,
+    slug: "shutter-island",
+    name: "Shutter Island",
+    released: " 19 February 2010",
+    runtime: "2h 18min",
+    genre: [" Mystery", " Thriller"],
+    plot:
+      "In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.",
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
   },
   {
     id: 2,
-    slug: "full-metal-jacket",
-    name: "Full Metal Jacket",
-    released: "10 July 1987",
-    runtime: "1h 56min",
-    genre: [" Drama", " War"],
-    plot:
-      "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNzkxODk0NjEtYjc4Mi00ZDI0LTgyYjEtYzc1NDkxY2YzYTgyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
-  },
-  {
-    id: 3,
-    slug: "taxi-driver",
-    name: "Taxi Driver",
+    slug: "inception",
+    name: "Inception",
     released: "9 February 1976",
     runtime: "1h 54min",
-    genre: [" Crime", " Drama"],
+    genre: [" Adventure", " Action", " Sci-Fi"],
     plot:
       "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,658,1000_AL_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+  },
+  {
+    id: 3,
+    slug: "the-king's-speech",
+    name: "The King's Speech",
+    released: " 25 December 2010",
+    runtime: "1h 58min",
+    genre: [" Biography", " History", " Drama"],
+    plot:
+      "The story of King George VI, his impromptu ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.",
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_SY1000_CR0,0,684,1000_AL_.jpg",
   },
   {
     id: 4,
-    slug: "scarface",
-    name: "Scarface",
-    released: "9 December 1983",
-    runtime: "2h 50min",
-    genre: [" Crime", " Drama"],
+    slug: "12-years-a-slave",
+    name: "12 Years a Slave",
+    released: "11 December 1962",
+    runtime: "3h 48min",
+    genre: [" Biography", " History", " Drama"],
     plot:
-      "In 1980 Miami, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.",
+      "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BNjdjNGQ4NDEtNTEwYS00MTgxLTliYzQtYzE2ZDRiZjFhZmNlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_.jpg",
   },
   {
     id: 5,
-    slug: "lawrence-of-arabia",
-    name: "Lawrence of Arabia",
-    released: "11 December 1962",
-    runtime: "3h 48min",
-    genre: [" Adventure", " Biography", " Drama"],
-    plot:
-      "The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks.",
+    slug: "gone-girl",
+    name: "Gone Girl",
+    released: "3 October 2014",
+    runtime: " 2h 29min ",
+    genre: [" Crime", " Mystery", " Thriller"],
+    plot: "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BYWY5ZjhjNGYtZmI2Ny00ODM0LWFkNzgtZmI1YzA2N2MxMzA0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SY1000_CR0,0,693,1000_AL_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_SY1000_CR0,0,678,1000_AL_.jpg",
   },
   {
     id: 6,
-    slug: "the-sting",
-    name: "The Sting",
-    released: "25 December 1973",
-    runtime: "2h 9min",
-    genre: [" Comedy", " Crime", " Drama"],
-    plot: "Two grifters team up to pull off the ultimate con.",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNGU3NjQ4YTMtZGJjOS00YTQ3LThmNmItMTI5MDE2ODI3NzY3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
-  },
-  {
-    id: 7,
-    slug: "a-separation",
-    name: "A Separation",
+    slug: "goodfellas",
+    name: "Goodfellas",
     released: "28 June 2012",
     runtime: "2h 3min",
-    genre: [" Drama"],
+    genre: [" Biography", " Crime"],
     plot:
-      "A married couple are faced with a difficult decision - to improve the life of their child by moving to another country or to stay in Iran and look after a deteriorating parent who has Alzheimer's disease.",
+      "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
     poster:
-      "https://m.media-amazon.com/images/M/MV5BZDRiZDY2YmEtZjMzNi00YTM4LWJkMmItYjFkNTQxMjQxNjA4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,690,1000_AL_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX667_CR0,0,667,999_AL_.jpg",
   },
 ];
 
