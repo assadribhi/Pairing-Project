@@ -5,7 +5,7 @@ import { Redirect, useParams } from "react-router-dom";
 import React from "react";
 
 // Styles
-import { DetailWrapper, ListWrapper, MovieWrapper } from "../styles";
+import { DetailWrapper, ListWrapper } from "../styles";
 import MovieItem from "./MovieItem";
 
 const MovieDetail = ({ movies }) => {
@@ -33,7 +33,7 @@ const MovieDetail = ({ movies }) => {
         <p className="movieRunTime">Run Time: {selected.runtime}</p>
       </DetailWrapper>
       <ListWrapper className="row" >
-        <h1>Reccommended</h1>
+        <h1>Recommended</h1>
         <div className="row">
           {movieRec}
         </div>

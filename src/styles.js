@@ -13,8 +13,8 @@ export const DetailWrapper = styled.div`
 
   img {
     margin: 20px;
-    width: 684px;
     float: left;
+    width: 684px;
     height: 1000px;
   }
 
